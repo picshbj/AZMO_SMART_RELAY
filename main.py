@@ -313,7 +313,7 @@ async def recv_handler(ws):
                 path = '/root/main.py'
                 if os.path.isfile(path):
                     os.remove(path)
-                os.system('wget -P /root/ https://raw.githubusercontent.com/picshbj/AZMO_SMART_RELAY/master/main.py')
+                os.system('wget -P /root/ https://raw.githubusercontent.com/picshbj/AZMO_SMART_RELAY/main/main.py')
 
                 await asyncio.sleep(10)
                 os.system('reboot')
